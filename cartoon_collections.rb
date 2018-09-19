@@ -12,12 +12,12 @@ end
 
 def long_planeteer_calls(array)
   # Your code here
-  return_values
+  return_values = []
   array.each {|element|
     return_values << element>=4
     return true if element >=4
   }
-  false
+  !return_values.all?{|element| element<4 }
 end
 
 def find_the_cheese# code an argument here
