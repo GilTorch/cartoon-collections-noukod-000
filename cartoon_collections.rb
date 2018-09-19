@@ -14,13 +14,16 @@ def long_planeteer_calls(array)
   # Your code here
   return_values = []
   array.each {|element|
-    return_values << (element.length>=4)
-    if element.length>=4
+    if element.length>4
       return true
     end
+    return_values << false
   }
-  return_values.include?(true)
+  if return_values.length == array.length
+    return false
+  end
 end
+
 
 
 def find_the_cheese# code an argument here
