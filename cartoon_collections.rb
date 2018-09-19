@@ -15,7 +15,9 @@ def long_planeteer_calls(array)
   return_values = []
   array.each {|element|
     return_values << element>=4
-    return true if element >=4
+    if element >=4
+      return true 
+    end
   }
   return_values.all?{|element| element==true }
 end
